@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f8fafc;
+    color: #0f172a;
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.logo span {
+    color: #3b82f6;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+.nav-links a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #334155;
+    transition: 0.3s;
+}
+.nav-links a:hover, .nav-links a.active {
+    color: #3b82f6;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.home {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 3rem 2rem;
+}
+.home-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.home-text {
+    flex: 1;
+}
+.home-text h1 {
+    font-size: 2.4rem;
+    margin-bottom: 0.5rem;
+}
+.home-text h1 span {
+    color: #3b82f6;
+}
+
+.home-text h3 {
+    color: #1e293b;
+    margin-bottom: 1rem;
+}
+.home-text p {
+    color: #475569;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+.btn {
+    display: inline-block;
+    background: #3b82f6;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover {
+    background: #2563eb;
+    transform: translateY(-3px);
+}
+.home-photo {
+    flex: 0.8;
+    text-align: center;
+}
+.home-photo img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 20px 25px -12px rgba(0,0,0,0.2);
+}
+
+.projects {
+    padding: 4rem 2rem;
+    background: white;
+}
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #0f172a;
+}
+.projects-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+.project-card {
+    background: #f1f5f9;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    transition: 0.3s;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px -10px rgba(0,0,0,0.15);
+}
+.project-card h3 {
+    color: #1e40af;
+    margin-bottom: 0.7rem;
+}
+
+.contact {
+    padding: 4rem 2rem;
+    background: #eef2ff;
+}
+.contact-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* KONTAK INFO - DIBUAT RAPI */
+.contact-info {
+    flex: 1;
+    background: white;
+    padding: 1.8rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.contact-info h3 {
+    margin-bottom: 1.2rem;
+    color: #1e40af;
+    font-size: 1.3rem;
+    border-left: 4px solid #3b82f6;
+    padding-left: 12px;
+}
+.contact-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+.contact-item .icon {
+    font-size: 1.2rem;
+    min-width: 32px;
+    color: #3b82f6;
+}
+.contact-item span:last-child {
+    color: #334155;
+    word-break: break-word;
+}
+
+.contact-form {
+    flex: 2;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+fieldset {
+    border: 2px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 1.5rem;
+    background: #ffffff;
+}
+legend {
+    font-weight: bold;
+    color: #1e40af;
+    padding: 0 0.8rem;
+    font-size: 1.1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: #1e293b;
+    font-size: 0.9rem;
+}
+.form-group input, 
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    background: white;
+}
+.form-group input:focus, 
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59,130,246,0.2);
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+.form-row .form-group {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.radio-group, .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0.5rem 0;
+}
+.radio-group label, .checkbox-group label {
+    font-weight: normal;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
+}
+
+/* Data yang muncul */
+.data-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.data-section h3 {
+    margin-bottom: 1rem;
+    color: #1e40af;
+    border-left: 4px solid #3b82f6;
+    padding-left: 12px;
+}
+.daftar-pesan {
+    max-height: 400px;
+    overflow-y: auto;
+}
+.data-card {
+    background: #f8fafc;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid #3b82f6;
+}
+.data-card .nama {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1e40af;
+}
+.data-card .info {
+    font-size: 0.8rem;
+    color: #64748b;
+    margin: 4px 0;
+}
+.data-card .detail {
+    margin-top: 8px;
+    color: #334155;
+    font-size: 0.9rem;
+    background: white;
+    padding: 8px;
+    border-radius: 8px;
+}
+.empty-message {
+    text-align: center;
+    color: #94a3b8;
+    padding: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #0f172a;
+    color: #cbd5e1;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 80%;
+        height: 100vh;
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2rem;
+        transition: 0.3s;
+        gap: 1.5rem;
+    }
+    .nav-links.active {
+        left: 0;
+    }
+    .home-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .home-text h1 {
+        font-size: 1.8rem;
+    }
+    .home-photo img {
+        width: 200px;
+        height: 200px;
+    }
+    .form-row {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    .radio-group, .checkbox-group {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .contact-item {
+        flex-wrap: wrap;
+    }
+}

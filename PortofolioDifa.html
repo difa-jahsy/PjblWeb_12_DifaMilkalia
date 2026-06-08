@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="portofolio.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Portofolio<span>Saya</span></div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Beranda</a></li>
+            <li><a href="#projects">Projek</a></li>
+            <li><a href="#contact">from data diri </a></li>
+        </ul>
+        <div class="menu-toggle">☰</div>
+    </nav>
+
+    <section id="home" class="home">
+        <div class="home-container">
+            <div class="home-text">
+                <h1>Halo Semua 👋, Saya Difa Milkalia <span id="typed-name"></span></h1>
+                <h3>Siswa SMK - Jurusan RPL / PPLG</h3>
+                <p>Saya seorang siswa yang antusias dalam pengembangan web & aplikasi.</p>
+                <a href="#contact" class="btn">Hubungi Saya</a>
+            </div>
+            <div class="home-photo">
+                <img src="foto osis.png" alt="Foto Diri">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 class="section-title"> Projek Saya</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Website sederhana</h3>
+                <p>Saya juga membuat website sederhana menggunakan HTML, CSS, dan JavaScript untuk melatih kemampuan di bidang web development.</p>
+            </div>
+            <div class="project-card">
+                <h3>Aplikasi sederhana</h3>
+                <p>Selain itu, saya membuat aplikasi sederhana menggunakan Python seperti program kasir dan pengolahan data.</p>
+            </div>
+            <div class="project-card">
+                <h3>Treacing coraldraw</h3>
+                <p>Saya membuat karya tracing menggunakan CorelDraw untuk desain baju, logo, dan ilustrasi sederhana dengan tampilan yang rapi dan menarik.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title"> Form Data Diri</h2>
+        
+        <div class="contact-container">
+
+            <div class="contact-info">
+                <h3> Kontak Saya</h3>
+                <div class="contact-detail">
+                    <div class="contact-item">
+                        <span class="icon">📧</span>
+                        <span>Difa@smk.belajar.id</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">📞</span>
+                        <span>+62 812 3456 7890</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">🌐</span>
+                        <span>@portofoli</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">📍</span>
+                        <span>Purbalingga, Indonesia</span>
+                    </div>
+                </div>
+
+                <hr style="margin: 1rem 0;">
+
+                <p style="font-size: 0.85rem; color: #475569;">
+                    ✨ Isi form di samping,<br>
+                </p>
+            </div>
+
+            <div class="contact-form">
+                <fieldset>
+                    <legend>📝 Masukan Data Diri</legend>
+
+                    <div class="form-group">
+                        <label for="nama-lengkap">Nama Lengkap *</label>
+                        <input id="nama-lengkap" name="nama_lengkap" type="text" placeholder="masukan nama">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="alamat">Alamat</label>
+                        <textarea id="alamat" placeholder="masukan alamat" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Tempat Lahir</label>
+                            <input type="text" id="tempat-lahir" placeholder="Tempat lahir">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Tanggal Lahir</label>
+                            <input type="date" id="tgl-lahir">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Jenis Kelamin</label>
+
+                        <div class="radio-group">
+                            <label><input type="radio" name="jenis_kelamin" value="Laki-laki"> Laki-laki</label>
+                            <label><input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Bahasa Asing yang dikuasai</label>
+
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" value="Inggris"> Inggris</label>
+                            <label><input type="checkbox" value="Arab"> Arab</label>
+                            <label><input type="checkbox" value="Jerman"> Jerman</label>
+                            <label><input type="checkbox" value="Lainnya"> Lainnya</label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nik">NIK</label>
+                            <input id="nik" placeholder="NIK">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="no_telepon">No Telepon</label>
+                            <input id="no_telepon" type="number" placeholder="No telepon">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" placeholder="Email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input id="password" type="password" placeholder="Masukkan password">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Hobi</label>
+
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" value="Menggambar"> Menggambar</label>
+                            <label><input type="checkbox" value="Desain"> Desain</label>
+                            <label><input type="checkbox" value="Mendengarkan Musik"> Mendengarkan Musik</label>
+                            <label><input type="checkbox" value="Membaca Komik"> Membaca Komik</label>
+                            <label><input type="checkbox" value="Lain-lain"> Lain-lain</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="agama">Agama</label>
+
+                        <select id="agama">
+                            <option>Islam</option>
+                            <option>Kristen</option>
+                            <option>Katolik</option>
+                            <option>Hindu</option>
+                            <option>Budha</option>
+                            <option>Konghucu</option>
+                        </select>
+                    </div>
+
+                    <button id="btnKirim" class="btn">Simpan Data</button>
+                </fieldset>
+            </div>
+        </div>
+
+        <div class="data-section">
+            <h3>📋 Data yang Sudah Dikirim</h3>
+
+            <div id="hasilData" class="daftar-pesan">
+                <p class="empty-message">
+                    Belum ada data. Isi form dan klik Simpan Data!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 - Portofolio  Dibuat Oleh Difa Milkalia</p>
+    </footer>
+
+    <script src="portofolio.js"></script>
+</body>
+</html>
